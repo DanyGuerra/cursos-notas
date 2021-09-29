@@ -17,3 +17,21 @@ describe('mapObjectToArray()', () => {
   })
 
 })
+
+//Asynchronous tests
+describe('getNewUser()', () => {
+  test('it gets user', async () => {
+    const user = await getNewUser(1)
+    expect(user).toBeTruthy()
+    expect(user.id).toBe(1)
+  })
+
+  test('no user found', async () => {
+    expect.assertions(1)
+    try{
+      const user = await getNewUser(19)
+    }catch (e){
+      expect(e).toBeTruthy() //Como el error es verdadero la salida es verdadero
+    }
+  })
+})
