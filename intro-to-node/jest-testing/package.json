@@ -1,0 +1,17 @@
+{
+  "name": "jest-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "utils.js",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "jest": "^27.2.4"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
