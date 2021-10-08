@@ -25,7 +25,7 @@ const Student = mongoose.model('student', student);
 
 connect()
   .then(async conection =>{
-    const student = await Student.create({fisrtName: 'Pedro'})
+    const student = await Student.create({fisrtName: 'Fani'})
 
     // Student.find({fisrtName: 'Dani'})
     // Student.findById('idABuscar')
